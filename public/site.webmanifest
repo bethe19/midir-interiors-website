@@ -1,0 +1,24 @@
+{
+  "name": "Abren Interiors and Construction",
+  "short_name": "Abren Interiors",
+  "start_url": "/",
+  "scope": "/",
+  "description": "Interior design and construction studio serving Addis Ababa, Ethiopia.",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/og-img.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

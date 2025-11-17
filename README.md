@@ -1,0 +1,1 @@
+This project is a fully modernized, SEO-optimized commercial portfolio website for Abren Interiors, rebuilt from the ground up using Next.js 14 with full Server-Side Rendering (SSR) for maximum performance, professionalism, and search engine visibility
