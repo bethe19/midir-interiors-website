@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Abren Interiors and Construction",
-  shortName: "Abren Interiors",
+  name: "MIDIR Interior Design & Construction",
+  shortName: "MIDIR",
   description:
-    "Abren Interiors and Construction delivers modern interior design, custom furniture, and high-quality construction services in Addis Ababa, Ethiopia.",
-  url: "https://abren-interiors.vercel.app",
+    "MIDIR Interior Design & Construction delivers modern interior design, custom furniture, and high-quality construction services in Addis Ababa, Ethiopia.",
+  url: "https://midir-interiors.vercel.app",
   locale: "en_US",
   language: "en",
   keywords: [
@@ -11,11 +11,11 @@ export const siteConfig = {
     "Addis Ababa construction company",
     "custom furniture Ethiopia",
     "luxury interior design",
-    "Abren Interiors",
+    "MIDIR",
   ],
   contact: {
-    email: "hello@abreninteriors.com",
-    phone: "+251911123456",
+    email: "Midirinteriorset@gmail.com",
+    phone: "+251977389710",
   },
   address: {
     street: "Africa Avenue, Bole",
@@ -29,9 +29,10 @@ export const siteConfig = {
     longitude: 38.7613,
   },
   social: {
-    instagram: "https://www.instagram.com/abreninteriors",
-    linkedin: "https://www.linkedin.com/company/abren-interiors",
-    twitter: "@abreninteriors",
+    instagram: "https://www.instagram.com/midirinteriorset",
+    linkedin: "https://www.linkedin.com/company/midir",
+    twitter: "@midir",
+    tiktok: "https://www.tiktok.com/@midirinteriors.et",
   },
 };
 

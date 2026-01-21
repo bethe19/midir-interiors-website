@@ -1,5 +1,5 @@
 {
-  "name": "woven-visions-web",
+  "name": "midir-interiors-web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -44,6 +44,7 @@
     "date-fns": "^3.6.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^12.26.2",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.462.0",
     "next": "^14.2.0",

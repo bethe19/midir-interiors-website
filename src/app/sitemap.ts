@@ -71,11 +71,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts
   const blogPosts = [
     {
-      id: "incorporating-Abrens",
+      id: "incorporating-Midirs",
       lastModified: "2025-11-01T00:00:00+00:00",
     },
     {
-      id: "kitchen-Abrens",
+      id: "kitchen-Midirs",
       lastModified: "2025-10-15T00:00:00+00:00",
     },
     {

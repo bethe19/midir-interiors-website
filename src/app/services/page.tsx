@@ -1,7 +1,8 @@
 import { Metadata } from "next";
-import { Check } from "lucide-react";
+import { Check, Home, Building2, Sparkles, Hammer } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
 import {
   Accordion,
   AccordionContent,
@@ -13,11 +14,11 @@ import { BRAND_NAME, SITE_URL } from "@/lib/siteConfig";
 export const metadata: Metadata = {
   title: "Interior Design & Construction Services",
   description:
-    "Explore Abren Interiors and Construction services: residential and commercial design, bespoke furnishings, and turnkey renovations for Addis Ababa clients.",
+    "Explore MIDIR Interior Design & Construction services: residential and commercial design, bespoke furnishings, and turnkey renovations for Addis Ababa clients.",
   openGraph: {
     title: "Interior Design & Construction Services",
     description:
-      "Explore Abren Interiors and Construction services: residential and commercial design, bespoke furnishings, and turnkey renovations for Addis Ababa clients.",
+      "Explore MIDIR Interior Design & Construction services: residential and commercial design, bespoke furnishings, and turnkey renovations for Addis Ababa clients.",
     url: `${SITE_URL}/services`,
   },
 };
@@ -25,20 +26,20 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   const services = [
     {
-      icon: "🏠",
+      icon: Home,
       title: "Residential Interior Design",
       description:
         "Transform your home into a personalized sanctuary. We specialize in creating harmonious living spaces that reflect your unique style and lifestyle needs.",
       features: [
         "Comprehensive space planning",
-        "Custom color schemes & Abren integration",
+        "Custom color schemes & pattern integration",
         "Furniture selection & sourcing",
         "Lighting design & installation",
         "Material & finish consultation",
       ],
     },
     {
-      icon: "🏢",
+      icon: Building2,
       title: "Commercial Interior Design",
       description:
         "Elevate your business environment with designs that blend functionality and aesthetics. Perfect for offices, retail spaces, and hospitality venues.",
@@ -51,10 +52,10 @@ export default function ServicesPage() {
       ],
     },
     {
-      icon: "✨",
+      icon: Sparkles,
       title: "Custom Furnishings",
       description:
-        "Discover bespoke furniture and decor pieces crafted exclusively for your space. From custom rugs to unique upholstery with intricate Abrens.",
+        "Discover bespoke furniture and decor pieces crafted exclusively for your space. From custom rugs to unique upholstery with intricate patterns.",
       features: [
         "Bespoke rug design",
         "Custom wallpaper creation",
@@ -64,7 +65,7 @@ export default function ServicesPage() {
       ],
     },
     {
-      icon: "🔨",
+      icon: Hammer,
       title: "Renovation & Remodeling",
       description:
         "Breathe new life into existing spaces with our comprehensive renovation services. We manage full-scale updates with minimal disruption.",
@@ -108,19 +109,9 @@ export default function ServicesPage() {
 
   const faqs = [
     {
-      question: "How long does a typical project take?",
-      answer:
-        "Smaller residential refresh projects average 6-8 weeks, while full-service commercial engagements can take 4-6 months depending on permitting and procurement timelines.",
-    },
-    {
       question: "Do you work with clients outside Addis Ababa?",
       answer:
         "Yes. Our team handles projects across Ethiopia and consults remotely for select international clients, coordinating site visits as needed.",
-    },
-    {
-      question: "What is the investment range for your services?",
-      answer:
-        "Every project is scoped individually, but turnkey residential interiors typically begin at $25K USD, while commercial fit-outs start around $60K USD.",
     },
     {
       question: "Can you collaborate with my architect or contractor?",
@@ -185,38 +176,43 @@ export default function ServicesPage() {
 
             <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
               {services.map((service, index) => (
-                <div
+                <ScrollAnimation
                   key={index}
-                  className="group relative bg-card rounded-2xl p-8 border border-border hover:border-foreground/20 transition-all duration-300 hover:shadow-xl"
+                  animation="slide-up"
+                  delay={index * 100}
                 >
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="text-5xl">{service.icon}</div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                        {service.title}
-                      </h3>
+                  <div className="group relative bg-card rounded-2xl p-8 border border-border hover:border-foreground/20 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                        <service.icon className="h-7 w-7 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                          {service.title}
+                        </h3>
+                      </div>
+                    </div>
+
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    <div className="space-y-3">
+                      {service.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <div className="mt-1 flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center transition-transform duration-200 hover:scale-125">
+                              <Check className="w-3 h-3 text-primary" />
+                            </div>
+                          </div>
+                          <span className="text-sm text-foreground/80">
+                            {feature}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
-
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-
-                  <div className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-3">
-                        <div className="mt-1 flex-shrink-0">
-                          <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
-                            <Check className="w-3 h-3 text-primary" />
-                          </div>
-                        </div>
-                        <span className="text-sm text-foreground/80">
-                          {feature}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                </ScrollAnimation>
               ))}
             </div>
 

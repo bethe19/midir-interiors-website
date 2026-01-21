@@ -11,87 +11,103 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BRAND_NAME, SITE_URL } from "@/lib/siteConfig";
 
 const projects: Record<string, any> = {
-  "modern-minimalist": {
-    id: "modern-minimalist",
-    images: [project1, project2, project3, project1],
-    title: "Modern Minimalist Residence",
+  "yada": {
+    id: "yada",
+    images: [
+      "/yada/yada-01.jpg",
+      "/yada/yada-02.jpg",
+      "/yada/yada-03.jpg",
+      "/yada/yada-04.jpg",
+      "/yada/yada-05.jpg",
+      "/yada/yada-06.jpg",
+    ],
+    title: "Yada Project",
     description:
-      "A 2,000 sq ft space redesigned with clean lines, geometric Abrens, and natural light.",
-    location: "Downtown District",
+      "A harmonious blend of modern aesthetics and functional living spaces, showcasing innovative design solutions.",
+    location: "Addis Ababa",
     category: "Residential",
     year: "2024",
-    size: "2,000 sq ft",
-    duration: "4 months",
-    client: "Private Client",
+    size: "3,500 sq ft",
+    duration: "6 months",
+    client: "Private Residential Client",
     challenge:
-      "Transform a dated apartment into a modern living space while maintaining the building's character.",
+      "Transform a traditional space into a modern, functional home that balances aesthetic appeal with practical living needs.",
     solution:
-      "We introduced minimalist furniture, geometric Abrens in textiles, and maximized natural light through strategic mirror placement and light color palette.",
+      "We incorporated contemporary design elements with traditional Ethiopian touches, creating open-plan living spaces with natural light flow and modern finishes.",
     results:
-      "The space now feels 40% larger, with improved flow and a cohesive modern aesthetic that increased property value by 25%.",
+      "A stunning transformation that combines modern luxury with cultural authenticity, creating a warm and inviting family home.",
     features: [
-      "Custom geometric wallpaper feature wall",
-      "Smart lighting system",
-      "Built-in storage solutions",
-      "Sustainable materials throughout",
+      "Open-plan living and dining areas",
+      "Natural stone and wood accents",
+      "Floor-to-ceiling windows",
+      "Custom-built furniture and cabinetry",
     ],
   },
-  "contemporary-office": {
-    id: "contemporary-office",
-    images: [project2, project1, project3, project2],
-    title: "Contemporary Office Design",
+  "maraki": {
+    id: "maraki",
+    images: [
+      "/maraki/maraki-01.jpg",
+      "/maraki/maraki-02.jpg",
+      "/maraki/maraki-03.jpg",
+      "/maraki/maraki-04.jpg",
+    ],
+    title: "Maraki Residence",
     description:
-      "Sophisticated corporate workspace blending functionality with warm, inviting aesthetics.",
-    location: "Business Park",
+      "Contemporary design met with luxurious comfort and style, creating an inviting atmosphere.",
+    location: "Addis Ababa",
+    category: "Residential",
+    year: "2024",
+    size: "2,800 sq ft",
+    duration: "5 months",
+    client: "High-End Residential Client",
+    challenge:
+      "Design a luxurious yet welcoming residence that maximizes space efficiency while maintaining an elegant aesthetic.",
+    solution:
+      "Strategic use of neutral tones, premium materials, and smart space planning created flowing, sophisticated interiors with distinct zones for living, dining, and relaxation.",
+    results:
+      "A refined living space that perfectly balances luxury and comfort, becoming a showcase of contemporary Ethiopian residential design.",
+    features: [
+      "Premium flooring and finishes",
+      "Integrated lighting design",
+      "Custom millwork and built-ins",
+      "High-end fixtures and fittings",
+    ],
+  },
+  "lina": {
+    id: "lina",
+    images: [
+      "/lina/lina 1.png",
+      "/lina/lina 2.png",
+      "/lina/lina 3.png",
+      "/lina/lina 4.png",
+      "/lina/lina 5.png",
+    ],
+    title: "Lina Apartments",
+    description:
+      "Innovative architectural solutions for urban living with modern finishes and thoughtful space planning.",
+    location: "Addis Ababa",
     category: "Commercial",
     year: "2024",
-    size: "5,000 sq ft",
-    duration: "6 months",
-    client: "Tech Startup",
+    size: "12,000 sq ft",
+    duration: "8 months",
+    client: "Real Estate Development Company",
     challenge:
-      "Create a professional yet welcoming office environment that promotes collaboration and creativity.",
+      "Create modern, efficient apartment units that appeal to young professionals while maximizing ROI for the developer.",
     solution:
-      "Open floor plan with dedicated collaboration zones, biophilic design elements, and Abren-rich acoustic panels for visual interest and sound management.",
+      "Efficient layouts with premium finishes, smart storage solutions, and contemporary design elements that maximize perceived space and natural light.",
     results:
-      "Employee satisfaction increased by 35%, and the space has become a key recruiting tool for the company.",
+      "A highly successful development with 95% pre-sale rate, demonstrating strong market demand for quality urban living spaces.",
     features: [
-      "Flexible workspace zones",
-      "Acoustic Abren panels",
-      "Biophilic design integration",
-      "Smart climate control",
-    ],
-  },
-  "luxury-bedroom": {
-    id: "luxury-bedroom",
-    images: [project3, project2, project1, project3],
-    title: "Luxury Bedroom Suite",
-    description:
-      "Elegant master bedroom featuring custom furnishings, rich textures, and subtle Abren work.",
-    location: "Private Residence",
-    category: "Residential",
-    year: "2023",
-    size: "800 sq ft",
-    duration: "3 months",
-    client: "High-Net-Worth Individual",
-    challenge:
-      "Design a luxurious retreat that balances opulence with comfort and tranquility.",
-    solution:
-      "Layered textures in muted tones, custom upholstered headboard with subtle Abrens, and carefully curated lighting to create multiple moods.",
-    results:
-      "A serene sanctuary that perfectly balances luxury and comfort, becoming the client's favorite space in their home.",
-    features: [
-      "Custom upholstered furniture",
-      "Layered lighting design",
-      "Premium textile selection",
-      "Integrated smart home features",
+      "Optimized unit layouts",
+      "Modern kitchen and bathroom designs",
+      "Balconies with city views",
+      "Energy-efficient systems",
     ],
   },
 };

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/../../public/favicon.svg";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -19,7 +19,6 @@ const Navbar = () => {
     { path: "/about", label: "About" },
     { path: "/services", label: "Services" },
     { path: "/portfolio", label: "Portfolio" },
-    { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -28,8 +27,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">
-            <Image src={logo} alt="Abren Interiors and Construction" width={40} height={40} />
-            <span className="text-xl font-bold text-foreground hidden sm:inline">Abren Interiors</span>
+            <Image src={logo} alt="MIDIR Interior Design & Construction" width={40} height={40} />
+            <span className="text-xl font-bold text-foreground hidden sm:inline">MIDIR</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -38,9 +37,8 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(link.path) ? "text-primary" : "text-muted-foreground"
-                }`}
+                className={`text-sm font-medium transition-colors hover:text-primary ${isActive(link.path) ? "text-primary" : "text-muted-foreground"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -69,9 +67,8 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`block py-2 text-sm font-medium ${
-                  isActive(link.path) ? "text-primary" : "text-muted-foreground"
-                }`}
+                className={`block py-2 text-sm font-medium ${isActive(link.path) ? "text-primary" : "text-muted-foreground"
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}

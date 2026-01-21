@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/logo.svg";
+import { Instagram, Linkedin, Mail, Phone, MapPin, Video } from "lucide-react";
+import logo from "@/assets/../../public/favicon.svg";
 
 const Footer = () => {
   return (
@@ -11,26 +11,37 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Image src={logo} alt="Abren Interiors and Construction" width={48} height={48} />
-              <h3 className="text-lg font-bold text-foreground">Abren Interiors</h3>
+              <Image src={logo} alt="MIDIR Interior Design & Construction" width={48} height={48} />
+              <h3 className="text-lg font-bold text-foreground">MIDIR</h3>
             </div>
             <p className="text-sm text-muted-foreground">
-              Let&apos;s shine together - transforming spaces with exceptional design and construction since 2015.
+              Crafting the ground you walk on - transforming spaces with exceptional design and construction since 2021.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/abreninteriors"
+                href="https://www.instagram.com/midirinteriorset"
                 target="_blank"
                 rel="noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Visit our Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://www.linkedin.com/company/abren-interiors"
+                href="https://www.tiktok.com/@midirinteriors.et"
                 target="_blank"
                 rel="noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Visit our TikTok"
+              >
+                <Video className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/midir-interiors"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Visit our LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -54,11 +65,6 @@ const Footer = () => {
               <li>
                 <Link href="/portfolio" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Blog
                 </Link>
               </li>
             </ul>
@@ -85,11 +91,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>+251 911 123 456</span>
+                <div className="flex flex-col">
+                  <span>0977389710</span>
+                  <span>0972389710</span>
+                </div>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <span>hello@abreninteriors.com</span>
+                <span>Midirinteriorset@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -97,7 +106,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Abren Interiors and Construction. All rights reserved.
+            © {new Date().getFullYear()} MIDIR Interior Design & Construction. All rights reserved.
           </p>
         </div>
       </div>

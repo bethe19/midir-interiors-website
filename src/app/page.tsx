@@ -9,6 +9,7 @@ import {
   Building2,
   Sofa,
   Sparkles,
+  Trophy,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -20,26 +21,24 @@ import {
   CarouselPrevious,
 } from "@/components/CarouselWithAutoplay";
 import heroImage from "@/assets/hero-interior.jpg";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+// Projects now use public images
 import { BRAND_NAME, SITE_URL, siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Interior Design & Construction in Addis Ababa",
   description:
-    "Abren Interiors and Construction delivers modern interior design, custom furniture, and high-quality construction services in Addis Ababa, Ethiopia.",
+    "MIDIR Interior Design & Construction delivers modern interior design, custom furniture, and high-quality construction services in Addis Ababa, Ethiopia.",
   keywords: [
     "interior design Ethiopia",
     "Addis Ababa construction company",
     "custom furniture Ethiopia",
-    "Abren Interiors",
+    "MIDIR",
     "luxury interior design",
   ],
   openGraph: {
     title: "Interior Design & Construction in Addis Ababa",
     description:
-      "Abren Interiors and Construction delivers modern interior design, custom furniture, and high-quality construction services in Addis Ababa, Ethiopia.",
+      "MIDIR Interior Design & Construction delivers modern interior design, custom furniture, and high-quality construction services in Addis Ababa, Ethiopia.",
     url: SITE_URL,
   },
 };
@@ -62,7 +61,7 @@ export default function HomePage() {
       icon: Sofa,
       title: "Custom Furnishings",
       description:
-        "Bespoke pieces featuring intricate Abrens and exceptional craftsmanship.",
+        "Bespoke pieces featuring intricate patterns and exceptional craftsmanship.",
     },
     {
       icon: Sparkles,
@@ -74,24 +73,22 @@ export default function HomePage() {
 
   const projects = [
     {
-      id: "modern-minimalist",
-      image: project1,
-      title: "Modern Minimalist Residence",
-      description:
-        "Clean lines and geometric Abrens create a serene living space.",
+      id: "yada",
+      image: "/yada/yada-01.jpg",
+      title: "Yada Project",
+      description: "A harmonious blend of modern aesthetics and functional living spaces.",
     },
     {
-      id: "contemporary-office",
-      image: project2,
-      title: "Contemporary Office Design",
-      description: "Sophisticated workspace blending functionality with style.",
+      id: "maraki",
+      image: "/maraki/maraki-01.jpg",
+      title: "Maraki Residence",
+      description: "Contemporary design met with luxurious comfort and style.",
     },
     {
-      id: "luxury-bedroom",
-      image: project3,
-      title: "Luxury Bedroom Suite",
-      description:
-        "Elegant Abrens and custom furnishings for ultimate comfort.",
+      id: "lina",
+      image: "/lina/lina 1.png",
+      title: "Lina Apartments",
+      description: "Innovative architectural solutions for urban living.",
     },
   ];
 
@@ -101,7 +98,7 @@ export default function HomePage() {
     serviceType: "Interior design and construction",
     provider: {
       "@type": "ProfessionalService",
-      name: "Abren Interiors and Construction",
+      name: "MIDIR Interior Design & Construction",
     },
     areaServed: {
       "@type": "City",
@@ -175,23 +172,21 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8 animate-fade-in">
                 <div className="inline-block">
-                  <span className="bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-semibold border border-primary/20 animate-scale-in">
-                    ✨ Award-Winning Design Studio
+                  <span className="bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-semibold border border-primary/20 animate-scale-in flex items-center gap-2">
+                    <Trophy className="h-4 w-4" /> Award-Winning Design Studio
                   </span>
                 </div>
 
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                  Let&apos;s Shine
+                  Crafting the ground 
                   <span className="block mt-2 bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
-                    Together
+                    you Live on
                   </span>
                 </h1>
 
                 <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-                  Experience the Perfect Blend of Quality, Comfort, and Design
-                  in Every Space.
                   <span className="block mt-3 font-medium text-foreground">
-                    Abren Interiors and Construction transforms your vision into
+                    MIDIR Interior Design & Construction transforms your vision into
                     reality with exceptional craftsmanship and innovative
                     design.
                   </span>
@@ -223,7 +218,7 @@ export default function HomePage() {
                 <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">
                   <div>
                     <div className="text-3xl font-bold text-foreground">
-                      500+
+                      50+
                     </div>
                     <div className="text-sm text-muted-foreground">
                       Projects Done
@@ -236,7 +231,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-foreground">15+</div>
+                    <div className="text-3xl font-bold text-foreground">3+</div>
                     <div className="text-sm text-muted-foreground">
                       Years Experience
                     </div>
@@ -379,7 +374,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Partners Section */}
+        {/* Partners Section
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/30">
           <div className="container mx-auto">
             <div className="text-center mb-12">
@@ -405,7 +400,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">

@@ -1,9 +1,9 @@
 {
-  "name": "Abren Interiors and Construction",
-  "short_name": "Abren Interiors",
+  "name": "Midir Interior Design and Construction",
+  "short_name": "Midir Interiors",
   "start_url": "/",
   "scope": "/",
-  "description": "Interior design and construction studio serving Addis Ababa, Ethiopia.",
+  "description": "Interior design and construction agency in Addis Ababa, Ethiopia.",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#111111",
@@ -14,11 +14,10 @@
       "type": "image/svg+xml"
     },
     {
-      "src": "/og-img.png",
+      "src": "/og-img.jpg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     }
   ]
 }
-

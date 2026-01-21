@@ -3,19 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 import { BRAND_NAME, SITE_URL } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Interior Design Portfolio",
   description:
-    "Browse Abren Interiors and Construction portfolio featuring residential and commercial projects completed across Addis Ababa.",
+    "Browse MIDIR Interior Design & Construction portfolio featuring residential and commercial projects completed across Addis Ababa.",
   openGraph: {
     title: "Interior Design Portfolio",
     description:
-      "Browse Abren Interiors and Construction portfolio featuring residential and commercial projects completed across Addis Ababa.",
+      "Browse MIDIR Interior Design & Construction portfolio featuring residential and commercial projects completed across Addis Ababa.",
     url: `${SITE_URL}/portfolio`,
   },
 };
@@ -23,40 +20,40 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   const projects = [
     {
-      id: "modern-minimalist",
-      image: project1,
-      title: "Modern Minimalist Residence",
+      id: "yada",
+      image: "/yada/yada-01.jpg",
+      title: "Yada Project",
       description:
-        "A 2,000 sq ft space redesigned with clean lines, geometric Abrens, and natural light. Completed in 2024.",
-      location: "Downtown District",
+        "A harmonious blend of modern aesthetics and functional living spaces, showcasing innovative design solutions.",
+      location: "Addis Ababa",
       category: "Residential",
     },
     {
-      id: "contemporary-office",
-      image: project2,
-      title: "Contemporary Office Design",
+      id: "maraki",
+      image: "/maraki/maraki-01.jpg",
+      title: "Maraki Residence",
       description:
-        "Sophisticated corporate workspace blending functionality with warm, inviting aesthetics.",
-      location: "Business Park",
+        "Contemporary design met with luxurious comfort and style, creating an inviting atmosphere.",
+      location: "Addis Ababa",
+      category: "Residential",
+    },
+    {
+      id: "lina",
+      image: "/lina/lina 1.png",
+      title: "Lina Apartments",
+      description:
+        "Innovative architectural solutions for urban living with modern finishes and thoughtful space planning.",
+      location: "Addis Ababa",
       category: "Commercial",
-    },
-    {
-      id: "luxury-bedroom",
-      image: project3,
-      title: "Luxury Bedroom Suite",
-      description:
-        "Elegant master bedroom featuring custom furnishings, rich textures, and subtle Abren work.",
-      location: "Private Residence",
-      category: "Residential",
     },
   ];
 
   const portfolioSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Abren Interiors Portfolio",
+    name: "MIDIR Portfolio",
     description:
-      "Case studies and completed projects from Abren Interiors and Construction.",
+      "Case studies and completed projects from MIDIR Interior Design & Construction.",
     url: `${SITE_URL}/portfolio`,
     about: projects.map((project) => ({
       "@type": "Project",
