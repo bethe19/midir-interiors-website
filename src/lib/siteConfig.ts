@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "MIDIR",
   description:
     "MIDIR Interior Design & Construction delivers modern interior design, custom furniture, and high-quality construction services in Addis Ababa, Ethiopia.",
-  url: "https://midir-interiors.vercel.app",
+  url: "https://midirinteriors.et",
   locale: "en_US",
   language: "en",
   keywords: [
