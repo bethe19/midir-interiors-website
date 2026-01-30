@@ -74,7 +74,7 @@ export default function HomePage() {
   const projects = [
     {
       id: "yada",
-      image: "/yada/yada-01.jpg",
+      image: "/yada/yada-02.jpg",
       title: "Yada Project",
       description: "A harmonious blend of modern aesthetics and functional living spaces.",
     },

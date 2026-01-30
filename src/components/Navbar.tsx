@@ -7,6 +7,7 @@ import { Menu } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import logo from "@/assets/../../public/favicon.svg";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -27,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">
-            <Image src={logo} alt="MIDIR Interior Design & Construction" width={40} height={40} />
+            <Image src={logo} alt="MIDIR Interior Design & Construction" width={40} height={40} className="dark:invert" />
             <span className="text-xl font-bold text-foreground hidden sm:inline">MIDIR</span>
           </Link>
 
@@ -43,6 +44,7 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
           <div className="hidden md:block">
@@ -60,6 +62,7 @@ const Navbar = () => {
           </button>
         </div>
 
+
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-2">
@@ -74,6 +77,10 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            <div className="py-2 flex items-center justify-between">
+              <span className="text-sm font-medium text-muted-foreground">Appearance</span>
+              <ThemeToggle />
+            </div>
             <Button variant="hero" size="sm" className="w-full" asChild>
               <Link href="/contact">Get Started</Link>
             </Button>

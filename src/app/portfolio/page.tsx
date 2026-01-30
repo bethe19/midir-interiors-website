@@ -21,12 +21,12 @@ export default function PortfolioPage() {
   const projects = [
     {
       id: "yada",
-      image: "/yada/yada-01.jpg",
+      image: "/yada/yada-02.jpg",
       title: "Yada Project",
       description:
         "A harmonious blend of modern aesthetics and functional living spaces, showcasing innovative design solutions.",
       location: "Addis Ababa",
-      category: "Residential",
+      category: "Commercial",
     },
     {
       id: "maraki",
@@ -35,7 +35,7 @@ export default function PortfolioPage() {
       description:
         "Contemporary design met with luxurious comfort and style, creating an inviting atmosphere.",
       location: "Addis Ababa",
-      category: "Residential",
+      category: "Commercial",
     },
     {
       id: "lina",

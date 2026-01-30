@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Image src={logo} alt="MIDIR Interior Design & Construction" width={48} height={48} />
+              <Image src={logo} alt="MIDIR Interior Design & Construction" width={48} height={48} className="dark:invert" />
               <h3 className="text-lg font-bold text-foreground">MIDIR</h3>
             </div>
             <p className="text-sm text-muted-foreground">
